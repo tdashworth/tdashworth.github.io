@@ -1,0 +1,131 @@
+#bg
+  position: fixed
+  height: 100%
+  width: 100%
+  top: 0
+  bottom: 0
+  color: rgba(255, 255, 255, 0.2)
+  letter-spacing: 2px
+  line-height: 20px
+  padding: 5px
+  text-align: justify
+  text-justify: inter-word
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  cursor: default
+
+#home
+  width: 100%
+  height: 100vh
+  position: relative
+  header
+    font-weight: bolder
+    position: absolute
+    top: 55%
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
+    z-index: 1
+    .avatar
+      width: 200px
+      display: block
+      margin: 0 auto
+      transition: 0s
+      cursor: pointer
+      position: relative
+      img
+        margin: 0 auto
+        border: 3px solid $secondary-color
+        border-radius: 50%
+    h1
+      font-size: 4em
+      text-align: center
+      margin: 0.3em 0
+      display: block
+    #typing
+      margin: 0 auto
+      text-align: center
+      display: block
+    p
+      font-size: 2em
+      display: inline-block
+      margin: 0
+    .typed-cursor
+      font-size: 2em
+      color: darkmagenta
+      position: relative
+      z-index: -1
+  nav
+      height: 7vh
+      ul
+          height: 100%
+          max-width: 600px
+          margin: 0 auto
+          padding: 20px
+          display: flex
+          justify-content: space-around
+
+          li
+              position: relative
+              display: inline-block
+              width: 10%
+
+              a
+                  text-decoration: none
+                  img
+                      width: 100%
+  #main-nav
+    left: 0
+    p
+      left: 150%
+
+  .typed-cursor
+    opacity: 1
+    -webkit-animation: blink 0.7s infinite
+    -moz-animation: blink 0.7s infinite
+    animation: blink 0.7s infinite
+
+@keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+@-webkit-keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+@-moz-keyframes blink
+  0%
+    opacity: 1
+
+  50%
+    opacity: 0
+
+  to
+    opacity: 1
+
+
+@media (max-width: 700px), (max-height: 700px)
+  #home header
+    .avatar
+      width: 150px
+    h1
+      font-size: 3em
+    p, .typed-cursor
+      font-size: 1.5em
