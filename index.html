@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/typed.js"></script>
-    <title>Tom Ashworth</title>
-  </head>
-  <body>
-    <div id="bg"></div>
-    <section id="home">
-      <header>
-        <div class="avatar" onclick="x()"><img src="assets/img/Tom.png" width="100%"></div>
-        <h1 id="title">Tom Ashworth</h1>
-        <div id="typing">
-          <p id="typed"> </p>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  <script src="assets/js/script.js"></script>
+  <title>Tom Ashworth</title>
+</head>
+
+<body>
+  <div x-data="{ username: 'awaiting...' }" x-init="getUser().then(user => this = user)">
+    <div>Message: <span x-text="username">Hello Alpine.js</span></div>
+    </div>
+
+    <div class="card-deck m-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
         </div>
-      </header>
-      <nav id="main-nav">
-        <ul>
-          <li><a href="http://home.tdashworth.uk"> <img src="assets/img/icons-png/cloud.png"></a></li>
-          <li><a href="http://blog.tdashworth.uk"><img src="assets/img/icons-png/wp.png"></a></li>
-          <li><a href="https://instagram.com/tdashworth"><img src="assets/img/icons-png/instagram.png"></a></li>
-          <li><a href="https://twitter.com/tdashworth"><img src="assets/img/icons-png/twitter.png"></a></li>
-          <li><a href="https://linkedin.com/in/tdashworth"><img src="assets/img/icons-png/linkedin.png"></a></li>
-        </ul>
-      </nav>
-    </section>
-    <section class="page" id="about"> 
-      <header class="full main-header">About</header>
-      <article class="stack">
-        <header class="sub-header">Apprentice</header>
-        <p>Currently, I&#39;m an apprentice at Capgemini as a software developer.</p>
-      </article>
-      <article class="stack">
-        <header class="sub-header">Developer</header>
-        <p>I enjoy solving problems with custom software solutions. Recently I wrote a LED controller for my phone using Python and Java. I also develop in C# and Javascript.</p>
-      </article>
-      <article class="stack">
-        <header class="sub-header">Photographer</header>
-        <p>Owner of a Sony A5000, I am an avid Photographer enjoying both landscape and creative shooting as you can see from my <a href="https://instagram.com/tdashworth">Instagram profile.</a></p>
-      </article>
-      <footer class="full"><a class="cta" href="mailto:tom@tdashworth.uk">Contact</a></footer>
-    </section>
-  </body>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</body>
+
 </html>
